@@ -1,7 +1,7 @@
 :root {
     --primary-color: #fff;
     --secondary-color: #0d375a;
-    --tertiary-color: #41b1b1; 
+    --tertiary-color: #97bbd8; 
   }
   
   * {
@@ -11,7 +11,6 @@
   }
   
   body {
-    color: var(--primary-color);
     font-family: Helvetica, Arial, sans-serif;
   }
 
@@ -44,10 +43,10 @@ header {
     font-weight: bold;
     margin: 0px;
     font-size: 2.5vw;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color: var(--tertiary-color);
-    padding: 20px 10px 20px 140px;
+    padding: 40px 40px 40px 160px;
     text-align: end;
     border: 0px;
   }
@@ -59,7 +58,7 @@ header {
   
   header nav {
     margin: 7px 0px;
-    padding: 20px 10px 20px 140px;
+    padding: 40px 10px 40px 140px;
   }
   
   header nav ul {
@@ -94,20 +93,23 @@ header {
     background-attachment: fixed;
     display: flex;
     flex-wrap: wrap;
-    /*align-items: flex-end; */
+    align-items: flex-end;
     height: 200px;
-    font-weight: bold;
   }
 
   .hero h2 {
-    font-weight: bold;
+    color: var(--primary-color);
     padding: 0px 0px 80px 120px;
   }
 
-  .about-me {
-    Background-color: var(--secondary-color);
-    display: flex-inline;
-    flex: flex-wrap;
+  /* HERO / JUMBOTRON STYLE END */
+
+  /* ABOUT ME SECTION START */
+    .about-me {
+    Background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    flex-wrap: flex;
     border: 5px solid var(--tertiary-color);
     height:  400px;
   }
@@ -119,9 +121,50 @@ header {
   .bio {
     width: 70%;
     float: right;
-  }
-
-  footer {
     color: var(--secondary-color);
   }
+  /* ABOUT ME SECTION END */
+  
+  /* MY WORK SECTION START */
+  .my-work {
+    Background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    flex-wrap: flex;
+    border: 5px solid var(--tertiary-color);
+    height:  400px;
+  }
+  /* MY WORK SECTION END */
 
+  /* FOOTER STYLE START */
+  footer {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+  }
+  
+    footer h1 {
+      display: block;
+    }
+
+      .contact-info {
+        color: var(--secondary-color);
+        font-size: 1.25vw;
+        display: flex;
+        flex: wrap;
+        justify-content: space-evenly;
+      }
+      .contact-info ul {
+        list-style: none;
+      }
+
+      .contact-info li {
+        float: left;
+      }
+
+      .contact-info li a {
+        display: block;
+        text-align: center;
+        padding: 10px 30px 10px 30px;
+      }
+  /* FOOTER STYLE END */
