@@ -109,6 +109,7 @@ header {
     Background-color: var(--primary-color);
     color: var(--secondary-color);
     display: flex;
+    flex-wrap: wrap;
     border-bottom: 2.5px solid var(--tertiary-color);
     border-top: 5px solid var(--tertiary-color);
     height:  400px;
@@ -140,54 +141,63 @@ header {
     height:  800px;
   }
 
-  .my-work-title {
-    width: 30%;
-    font-size: x-large;
-    border-right: 5px solid var(--tertiary-color);
-    padding:  360px 40px 360px 40px;
-    text-align: end;
-  }
-
-  .my-work-links {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-  }
-
-    .my-work-links a {
-      color: var(--primary-color);
-      font-size: xx-large;
-      text-decoration: none;
-      padding: 120px 0px 0px 40px;
-      text-align: center;
+    .my-work-title {
+      width: 30%;
+      font-size: x-large;
+      border-right: 5px solid var(--tertiary-color);
+      padding:  360px 40px 360px 40px;
+      text-align: end;
     }
 
-    .run-buddy {
-      background-image: url("../images/hero-bg.jpg");
-      background-size: cover;
-      color: var(--secondary-color);
-      height: 400px;
-      width: 100%;
-      order: 1;
+    .my-work-links {
+      width: 70%;
+      display: flex;
+      flex-wrap: flex;
+      flex-direction: column;
     }
 
-    .horiseon {
-      background-image: url("../images/search-engine-optimization.jpg");
-      background-size: cover;
-      width: 50%;
-      height: 396px;
-      order: 2;
-      float: right;
-    }
+      .my-work-links a {
+        color: var(--primary-color);
+        font-size: xx-large;
+        text-decoration: none;
+        padding: 120px 0px 0px 40px;
+        text-align: center;
+      }
 
-    .robot-gladiators {
-      background-image: url("../images/iStock-1091882772-scaled.jpg");
-      background-size: cover;
-      width: 50%;
-      height: 396px;
-      order: 2;
-      float: left;
-    }
+        .run-buddy {
+          background-image: url("../images/hero-bg.jpg");
+          background-size: cover;
+          color: var(--secondary-color);
+          height: 400px;
+          width: 100%;
+          order: 0;
+        }
+
+        .my-work-links-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        justify-content: flex-end;
+        order: 2;
+      }
+
+          .horiseon {
+          background-image: url("../images/search-engine-optimization.jpg");
+          background-size: cover;
+          width: 100%;
+          height: 396px;
+          float: right;
+          flex-direction: row;
+          }
+
+          .robot-gladiators {
+            background-image: url("../images/iStock-1091882772-scaled.jpg");
+            background-size: cover;
+            width: 100%;
+            height: 396px;
+            float: left;
+            flex-direction: row;
+          }
 
 
   /* MY WORK SECTION END */
