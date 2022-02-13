@@ -109,7 +109,6 @@ header {
     Background-color: var(--primary-color);
     color: var(--secondary-color);
     display: flex;
-    flex-wrap: flex;
     border-bottom: 2.5px solid var(--tertiary-color);
     border-top: 5px solid var(--tertiary-color);
     height:  400px;
@@ -136,11 +135,9 @@ header {
     Background-color: var(--primary-color);
     color: var(--secondary-color);
     display: flex;
-    flex-wrap: flex;
     border-bottom: 2.5px solid var(--tertiary-color);
     border-top: 2.5px solid var(--tertiary-color);
     height:  800px;
-    position: relative;
   }
 
   .my-work-title {
@@ -151,30 +148,47 @@ header {
     text-align: end;
   }
 
-  .run-buddy {
-    background-image: url("../images/hero-bg.jpg");
-    background-size: cover;
+  .my-work-links {
     width: 70%;
-    float: right;
-    color: var(--secondary-color);
-    padding: 100px 40px 100px 40px;
-    height: 380px;
+    display: flex;
+    flex-direction: column;
   }
 
-  .run-buddy a {
-    color: var(--primary-color);
-    font-size: x-large;
-    text-decoration: none;
-  }
+    .my-work-links a {
+      color: var(--primary-color);
+      font-size: xx-large;
+      text-decoration: none;
+      padding: 120px 0px 0px 40px;
+      text-align: center;
+    }
 
-  .horiseon {
-    background-image: url("../images/search-engine-optimization.jpg");
-    background-size: cover;
-    width: 35%;
-    height: 400px;
-    position: absolute;
-    top: 380px; left: 456px;
-  }
+    .run-buddy {
+      background-image: url("../images/hero-bg.jpg");
+      background-size: cover;
+      color: var(--secondary-color);
+      height: 400px;
+      width: 100%;
+      order: 1;
+    }
+
+    .horiseon {
+      background-image: url("../images/search-engine-optimization.jpg");
+      background-size: cover;
+      width: 50%;
+      height: 396px;
+      order: 2;
+      float: right;
+    }
+
+    .robot-gladiators {
+      background-image: url("../images/iStock-1091882772-scaled.jpg");
+      background-size: cover;
+      width: 50%;
+      height: 396px;
+      order: 2;
+      float: left;
+    }
+
 
   /* MY WORK SECTION END */
 
@@ -196,6 +210,7 @@ header {
         flex: wrap;
         justify-content: space-evenly;
       }
+
       .contact-info ul {
         list-style: none;
       }
@@ -209,4 +224,5 @@ header {
         text-align: center;
         padding: 10px 30px 10px 30px;
       }
+      
   /* FOOTER STYLE END */
