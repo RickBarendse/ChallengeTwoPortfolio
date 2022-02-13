@@ -110,18 +110,24 @@ header {
     color: var(--secondary-color);
     display: flex;
     flex-wrap: flex;
-    border: 5px solid var(--tertiary-color);
+    border-bottom: 2.5px solid var(--tertiary-color);
+    border-top: 5px solid var(--tertiary-color);
     height:  400px;
   }
 
   .about-me-title {
     width: 30%;
+    font-size: x-large;
+    border-right: 5px solid var(--tertiary-color);
+    padding:  180px 40px 180px 40px;
+    text-align: end;
   }
 
   .bio {
     width: 70%;
     float: right;
     color: var(--secondary-color);
+    padding: 100px 40px 100px 40px;
   }
   /* ABOUT ME SECTION END */
   
@@ -131,9 +137,45 @@ header {
     color: var(--secondary-color);
     display: flex;
     flex-wrap: flex;
-    border: 5px solid var(--tertiary-color);
-    height:  400px;
+    border-bottom: 2.5px solid var(--tertiary-color);
+    border-top: 2.5px solid var(--tertiary-color);
+    height:  800px;
+    position: relative;
   }
+
+  .my-work-title {
+    width: 30%;
+    font-size: x-large;
+    border-right: 5px solid var(--tertiary-color);
+    padding:  360px 40px 360px 40px;
+    text-align: end;
+  }
+
+  .run-buddy {
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    width: 70%;
+    float: right;
+    color: var(--secondary-color);
+    padding: 100px 40px 100px 40px;
+    height: 380px;
+  }
+
+  .run-buddy a {
+    color: var(--primary-color);
+    font-size: x-large;
+    text-decoration: none;
+  }
+
+  .horiseon {
+    background-image: url("../images/search-engine-optimization.jpg");
+    background-size: cover;
+    width: 35%;
+    height: 400px;
+    position: absolute;
+    top: 380px; left: 456px;
+  }
+
   /* MY WORK SECTION END */
 
   /* FOOTER STYLE START */
