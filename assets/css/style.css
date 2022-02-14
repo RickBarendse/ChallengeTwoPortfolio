@@ -128,6 +128,8 @@ header {
     float: right;
     color: var(--secondary-color);
     padding: 100px 40px 100px 40px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
   }
   /* ABOUT ME SECTION END */
   
@@ -164,6 +166,10 @@ header {
         text-align: center;
       }
 
+      .my-work-links a:hover {
+        color:darkmagenta;
+      }
+
         .run-buddy {
           background-image: url("../images/hero-bg.jpg");
           background-size: cover;
@@ -179,13 +185,13 @@ header {
         grid-gap: 20px;
         justify-content: flex-end;
         order: 2;
+        height: 396px;
       }
 
           .horiseon {
           background-image: url("../images/search-engine-optimization.jpg");
           background-size: cover;
           width: 100%;
-          height: 396px;
           float: right;
           flex-direction: row;
           }
@@ -194,12 +200,9 @@ header {
             background-image: url("../images/iStock-1091882772-scaled.jpg");
             background-size: cover;
             width: 100%;
-            height: 396px;
             float: left;
             flex-direction: row;
           }
-
-
   /* MY WORK SECTION END */
 
   /* FOOTER STYLE START */
@@ -215,10 +218,12 @@ header {
 
       .contact-info {
         color: var(--secondary-color);
-        font-size: 1.25vw;
+        font-size: auto;
         display: flex;
-        flex: wrap;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 10px 30px 10px 30px;
       }
 
       .contact-info ul {
@@ -231,8 +236,57 @@ header {
 
       .contact-info li a {
         display: block;
-        text-align: center;
-        padding: 10px 30px 10px 30px;
-      }
-      
+        padding: 0px 20px 0px 20px;
+      }    
   /* FOOTER STYLE END */
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header h1 {
+    font-size: auto;
+    padding: 40px 40px 40px 120px;
+  }
+
+  header nav {
+    margin: 7px 0px;
+    padding: 40px 10px 40px 40px;
+  }
+
+  .my-work {
+    height: 400px;
+  }
+
+  .my-work-title {
+    padding: 180px 20px 180px 20px;
+  }
+
+  .run-buddy {
+    height: 200px;
+  }
+
+  .my-work-links-grid {
+    height: 200px;
+  }
+
+
+  .contact-info {
+    font-size: auto;  
+    justify-content: space-evenly;
+  }
+
+  .contact-info li a {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  header h1 {
+    padding: 0x 0px 0px 40px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
