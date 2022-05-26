@@ -159,7 +159,7 @@ header {
     }
 
       .my-work-links a {
-        color: var(--primary-color);
+        color: black;
         font-size: xx-large;
         text-decoration: none;
         padding: 120px 0px 0px 40px;
@@ -170,39 +170,41 @@ header {
         color:darkmagenta;
       }
 
-        .run-buddy {
-          background-image: url("../images/hero-bg.jpg");
-          background-size: cover;
-          color: var(--secondary-color);
-          height: 400px;
-          width: 100%;
-          order: 0;
-        }
-
-        .my-work-links-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-        justify-content: flex-end;
-        order: 2;
-        height: 396px;
+      .run-buddy {
+        background-image: url("../images/hero-bg.jpg");
+        background-size: cover;
+        color: var(--secondary-color);
+        height: 400px;
+        width: 100%;
+        order: 0;
       }
 
-          .horiseon {
-          background-image: url("../images/search-engine-optimization.jpg");
-          background-size: cover;
-          width: 100%;
-          float: right;
-          flex-direction: row;
-          }
+      .my-work-links-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      justify-content: flex-end;
+      order: 2;
+      height: 396px;
+      }
 
-          .oregon {
-            background-image: url("../images/Crater_Lake.jpg");
-            background-size: cover;
-            width: 100%;
-            float: left;
-            flex-direction: row;
-          }
+      .horiseon {
+      background-image: url("../images/Shanes_List.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-left: 10px;
+      width: 100%;
+      float: right;
+      flex-direction: row;
+      }
+
+      .oregon {
+        background-image: url("../images/Crater_Lake.jpg");
+        background-size: cover;
+        width: 100%;
+        float: left;
+        flex-direction: row;
+      }
   /* MY WORK SECTION END */
 
   /* FOOTER STYLE START */
